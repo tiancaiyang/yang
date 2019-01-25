@@ -1,0 +1,33 @@
+// 全局变量
+
+
+// 全局混合器
+
+// 文本内容超出标签宽度用省略号代替
+@mixin p-common {
+ text-overflow: ellipsis;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 2;
+ -webkit-box-orient: vertical;
+}
+
+// 盒子内水平垂直居中
+@mixin common_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// 商品列表显示悬浮动画
+@mixin common_li_hover {
+  cursor:pointer;
+  -webkit-transition: all 0.2s linear; //渐变效果
+  transition: all 0.2 linear;
+  &:hover {
+    -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);//添加阴影
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform: translate3d(0, -2px, 0); //向上浮动
+    transform: translate3d(0, -2px, 0);
+  }
+}

@@ -1,0 +1,60 @@
+// 修改 element-ui 表单 input 框相关的样式
+.el-input__inner,
+.el-checkbox__inner,
+.el-textarea__inner,
+.el-button {
+  border-radius: 0;
+}
+
+.el-input__inner {
+  height: 45px;
+  font-size: 16px;
+  color: #333;
+}
+
+.el-input__inner:hover {
+  border-color: #e9e9e9;
+}
+
+.el-input__inner:focus {
+  border-color: #e51818;
+  box-shadow: none;
+  transition-duration: .5s;
+}
+
+.el-input__inner::-webkit-input-placeholder {
+  line-height: 20px;
+}
+
+.el-input__inner,
+.el-checkbox__inner,
+.el-textarea__inner,
+.el-button {
+  border-radius: 0;
+}
+
+.el-form-item__label {
+  height: 45px;
+  line-height: 45px;
+  color: #999;
+  font-size: 16px;
+}
+
+.is-animating {
+  transition: transform 0.4s ease-in-out;
+}
+.el-radio__input.is-checked .el-radio__inner{
+  background-color: #e51818;
+  border-color: #e51818;
+}
+.el-radio__input,.el-radio__inner{
+  width: 17px;
+  height: 17px;
+}
+.el-radio__inner{
+  border: 1px solid#c4c4c4;
+}
+.return .el-input.is-disabled .el-input__inner{
+  color: #e51818;
+  font-weight: bold;
+}
